@@ -1051,10 +1051,15 @@ button {
 .blog-topic-content p {
   color: #555555; }
 
+.blog-topic a:hover {
+  color: #650300; }
+
 .blog-topic .blog-share-link {
   border-bottom: 1px solid #707070; }
   .blog-topic .blog-share-link img {
     width: 24px;
     height: 24px; }
+    .blog-topic .blog-share-link img:hover {
+      opacity: 0.7; }
 
 /*# sourceMappingURL=all.css.map */
