@@ -5,18 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
+  <title>門市據點</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
   <header class="header bg-primary pt-4 pb-4 pb-sm-0">
-    <div class="container d-flex justify-content-between align-items-center flex-sm-column">
-      <a href="index.html">
-        <img class="logo mb-sm-4" src="./assets/images/logo-white.png" alt="logo">
-      </a>
-      <ul class="navbar d-flex text-center flex-sm-wrap w-sm-100">
+    <div class="container d-flex justify-content-between align-items-center flex-sm-wrap">
+      <div class="d-sm-flex justify-content-sm-between align-items-center w-sm-100 px-sm-3">
+        <a href="index.html">
+          <img class="logo mb-sm-4" src="./assets/images/logo-white.png" alt="logo">
+        </a>
+        <a class="d-none d-sm-block" href="#">
+          <span class="material-symbols-outlined menu-icon text-white">
+            menu
+          </span>
+        </a>
+      </div>
+      <ul class="navbar d-flex text-center flex-sm-wrap w-sm-100 none-sm">
         <li class="w-sm-50"><a class="text-white py-3" href="seriesOptical.html">系列鏡框</a></li>
         <li class="w-sm-50"><a class="text-white py-3" href="location.html">門市據點</a></li>
         <li class="w-sm-50"><a class="text-white py-3" href="blog.html">部落格</a></li>
@@ -24,22 +31,52 @@
       </ul>
     </div>
   </header>
-  <section class="series-navbar">
-    <div class="container">
-      <ul class="d-flex text-center">
-        <li class="w-33">
-          <a class="fs-xl fs-sm-base fw-medium active py-6 py-md-4" href="seriesOptical.html">OPTICAL</a>
-        </li>
-        <li class="w-33">
-          <a class="fs-xl fs-sm-base fw-medium py-6 py-md-4" href="seriesSun.html">SUNGLASSES</a>
-        </li>
-        <li class="w-33">
-          <a class="fs-xl fs-sm-base fw-medium py-6 py-md-4" href="#">FUNCTIONAL</a>
-        </li>
-      </ul> 
-    </div>
-  </section>
-  <%- contents %>
+
+  
+<main class="location container pt-24 pb-20 pt-md-20 pt-sm-10 pb-sm-16">
+  <h1 class="border-left-red-500-8 fs-4xl fw-bold fs-sm-l pl-4 mb-8">門市據點</h1>
+  <div class="d-flex align-items-center mb-10 mb-sm-6">
+    <label class="fs-l fs-sm-base mr-4" for="selLocation">選擇分店</label>
+    <select class="fs-18" name="selLocation" id="selLocation">
+      <option value="台北中山旗艦店">台北中山旗艦店</option>
+      <option value="台北綠園店">台北綠園店</option>
+      <option value="台中清水旗艦店">台中清水旗艦店</option>
+      <option value="高雄中正形象店">高雄中正形象店</option>
+      <option value="高雄夢時代店">高雄夢時代店</option>
+    </select>
+  </div>
+  <ul class="location-stores d-flex flex-wrap mx-n3">
+    <li class="w-40 w-md-100 px-3 d-md-flex flex-sm-wrap mb-md-6">
+      <img class="w-md-50 w-sm-100 mr-md-6" src="./assets/images/store-1.png" alt="image-store-1">
+      <div class="store-info w-md-50 w-sm-100">
+        <h3 class="fs-l px-6 py-2">台北中山旗艦店</h3>
+        <ul class="px-6 py-4">
+          <li class="d-flex mb-2">
+            <span class="material-symbols-outlined">
+              call
+            </span>
+            <p class="fs-m">電話：(02)000-1234</p>
+          </li>
+          <li class="d-flex mb-2">
+            <span class="material-symbols-outlined">
+              schedule
+              </span>
+            <p class="fs-m">營業時間：10:00-21:00</p>
+          </li>
+          <li class="d-flex">
+            <span class="material-symbols-outlined">
+              location_on
+            </span>
+            <p class="fs-m">地址：台北市中山區南京東路25巷2-1號</p>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="w-60 w-md-100 px-3">
+      <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4622750431963!2d121.52591171484231!3d25.052316383963753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9665c221fab%3A0xe3c1d49711f01596!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUx6Jmf!5e0!3m2!1szh-TW!2stw!4v1659956013640!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </li>
+  </ul>
+</main>
 
   <footer class="footer bg-primary text-white pt-12 pb-8 pt-sm-6 pb-sm-6">
     <div class="container">
@@ -80,8 +117,9 @@
       </ul>
     </div>
   </footer>
+  <!-- 載入jQuery -->
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
-
 </html>
