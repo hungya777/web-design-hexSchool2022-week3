@@ -62,10 +62,19 @@
       color: $gray-500;
     }
   }
+  a {
+    &:hover {
+      color: $danger;
+      // opacity: 0.7;
+    }
+  }
   .blog-share-link {
     border-bottom: 1px solid $gray-400;
     img {
       @include size(24px);
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }
