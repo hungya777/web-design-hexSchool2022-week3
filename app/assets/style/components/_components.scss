@@ -1,0 +1,40 @@
+.pagination {
+  a {
+    display: block;
+    color: $gray-500;
+    border: 1px solid $gray-500;
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+  }
+  :first-child {
+    a {
+      line-height: 29px;
+      padding-top: 11px;
+      padding-bottom: 11px;
+      @include mobile{
+        line-height: 26px;
+      }
+    }
+  }
+  :last-child {
+    a {
+      line-height: 29px;
+      padding-top: 11px;
+      padding-bottom: 11px;
+      @include mobile{
+        line-height: 26px;
+      }
+    }
+  }
+  a.active{
+    background: $black;
+    color: $white;
+  }
+  :not(:last-child){
+    a{
+      border-right: 0;
+    }
+  }
+}

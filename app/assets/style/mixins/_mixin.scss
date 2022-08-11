@@ -1,0 +1,52 @@
+@mixin pad {
+  @media (max-width: 992px) {
+    @content
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content
+  }
+}
+
+@mixin size($width,$height:$width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font-size {
+  &-s {
+    font-size: $fs-s;
+  }
+  &-base {
+    font-size: $fs-base;
+  }
+  &-18 {
+    font-size: $fs-18;
+  }
+  &-19 {
+    font-size: $fs-19;
+  }
+  &-m {
+    font-size: $fs-m;
+  }
+  &-l {
+    font-size: $fs-l;
+  }
+  &-xl {
+    font-size: $fs-xl;
+  }
+  &-2xl {
+    font-size: $fs-2xl;
+  }
+  &-3xl {
+    font-size: $fs-3xl;
+  }
+  &-4xl {
+    font-size: $fs-4xl;
+  }
+  &-5xl {
+    font-size: $fs-5xl;
+  }
+}

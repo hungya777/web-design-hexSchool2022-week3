@@ -1,0 +1,71 @@
+.nav-blog {
+  .material-symbols-outlined {
+    font-size: 40px;
+  }
+  ul {
+    a {
+      display: block;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      &:hover {
+        /* 縮放 */
+        transform: scale(1.1, 1.1);
+        transition: all 0.1ms ease;
+      }
+      @include mobile() {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
+  }
+  .search-icon {
+    &:hover {
+      /* 縮放 */
+      transform: scale(1.1, 1.1);
+      transition: all 0.1ms ease;
+    }
+  }
+}
+
+.blog {
+  img {
+    min-height: 100%;
+  }
+  h2 {
+    a {
+      display: inline-block;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+  &-content-text {
+    color: $gray-500;
+    a {
+      color: $gray-500;
+      &:hover {
+        color: $danger;
+        font-weight: bold;
+      }
+    }
+  }
+  &-content-moreLink {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.blog-topic {
+  &-content {
+    p {
+      color: $gray-500;
+    }
+  }
+  .blog-share-link {
+    border-bottom: 1px solid $gray-400;
+    img {
+      @include size(24px);
+    }
+  }
+}

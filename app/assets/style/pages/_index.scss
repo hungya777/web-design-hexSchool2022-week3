@@ -1,0 +1,157 @@
+.banner {
+  background: url(../images/home-header.png);
+  height: 100vh;
+  background-repeat: no-repeat; /*圖片不重複*/
+  background-size: cover; /*圖片等比例縮放，讓圖片可以蓋滿元素寬高*/
+  background-position: center; /*讓圖片位置居中*/
+}
+.banner-content {
+  h1 {
+    color: $danger;
+  }
+  a {
+    display: inline-block;
+    font-size: $fs-m;
+    padding: 6px 12px;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+.service {
+  h2, h3 {
+    color: $danger;
+  }
+
+  .service-content{
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+/* 經典系列鏡框 */
+.series {
+  h2 {
+    color: $danger;
+  }
+  h3 {
+    color: $primary;
+  }
+  @include pad() {
+    .container {
+      max-width: 360px;
+    }
+  }
+  @include mobile() {
+    .container {
+      max-width: 372px;
+    }
+  }
+}
+
+/* 聯名設計鏡框 */
+.co-branding {
+  background: url(../images/index-bg.png);
+  height: auto;
+  background-repeat: no-repeat; /*圖片不重複*/
+  background-size: cover; /*圖片等比例縮放，讓圖片可以蓋滿元素寬高*/
+  background-position: center; /*讓圖片位置居中*/
+  a {
+    display: block;
+    &:hover {
+      img {
+        opacity: 0.7;
+      }
+      h3 {
+        background: $primary;
+        color: $white;
+      }
+    }
+  }
+  h3 {
+    color: $primary;
+  }
+  @include pad() {
+    .container {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+  }
+  @include mobile() {
+    .container {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+}
+
+/* 顧客推薦 */
+.recommend {
+  h2 {
+    color: $danger;
+  }
+  .customer-card {
+    height: 205px;
+    padding: 16px;
+    border: 1px solid $gray-200;
+    box-shadow: 0px 2px 6px #00000029; /*邊框陰影效果*/
+    .recommend-date {
+      color: $gray-400;
+    }
+  }
+  @include mobile() {
+    .recommend-content li {
+      width: 100%;
+    }
+  }
+}
+/* 聯絡我們 */
+.contact {
+  h2 {
+    color: $danger;
+  }
+  label {
+    display: block;
+  }
+  .contact-from {
+    width: 50%;
+    margin: 0 auto;
+    textarea {
+      height: 136px;
+    }
+    &-chk {
+      label {
+        display: inline;
+      }
+    }
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .btn-contact-submit {
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+    border: 0; /* 清除border */
+    &:hover {
+      background: $danger;
+    }
+  }
+  @include pad() {
+    .contact-from {
+      width: 75%;
+    }
+  }
+  @include mobile() {
+    .contact-from {
+      width: 100%;
+    }
+    .btn-contact-submit {
+      width: 100%;
+    }
+  }
+}

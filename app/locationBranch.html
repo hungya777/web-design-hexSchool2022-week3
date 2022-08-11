@@ -1,0 +1,51 @@
+---
+title: 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: location
+---
+
+<main class="location container pt-24 pb-20 pt-md-20 pt-sm-10 pb-sm-16">
+  <h1 class="border-left-red-500-8 fs-4xl fw-bold fs-sm-l pl-4 mb-8">門市據點</h1>
+  <div class="d-flex align-items-center mb-10 mb-sm-6">
+    <label class="fs-l fs-sm-base mr-4" for="selLocation">選擇分店</label>
+    <select class="fs-18" name="selLocation" id="selLocation">
+      <option value="台北中山旗艦店">台北中山旗艦店</option>
+      <option value="台北綠園店">台北綠園店</option>
+      <option value="台中清水旗艦店">台中清水旗艦店</option>
+      <option value="高雄中正形象店">高雄中正形象店</option>
+      <option value="高雄夢時代店">高雄夢時代店</option>
+    </select>
+  </div>
+  <ul class="location-stores d-flex flex-wrap mx-n3">
+    <li class="w-40 w-md-100 px-3 d-md-flex flex-sm-wrap mb-md-6">
+      <img class="w-md-50 w-sm-100 mr-md-6" src="./assets/images/store-1.png" alt="image-store-1">
+      <div class="store-info w-md-50 w-sm-100">
+        <h3 class="fs-l px-6 py-2">台北中山旗艦店</h3>
+        <ul class="px-6 py-4">
+          <li class="d-flex mb-2">
+            <span class="material-symbols-outlined">
+              call
+            </span>
+            <p class="fs-m">電話：(02)000-1234</p>
+          </li>
+          <li class="d-flex mb-2">
+            <span class="material-symbols-outlined">
+              schedule
+              </span>
+            <p class="fs-m">營業時間：10:00-21:00</p>
+          </li>
+          <li class="d-flex">
+            <span class="material-symbols-outlined">
+              location_on
+            </span>
+            <p class="fs-m">地址：台北市中山區南京東路25巷2-1號</p>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="w-60 w-md-100 px-3">
+      <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4622750431963!2d121.52591171484231!3d25.052316383963753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9665c221fab%3A0xe3c1d49711f01596!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUx6Jmf!5e0!3m2!1szh-TW!2stw!4v1659956013640!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </li>
+  </ul>
+</main>
