@@ -36,13 +36,13 @@
 <main>
   <section class="banner">
     <div class="container d-flex justify-content-end align-items-center">
-      <div class="banner-content text-right pr-3">
+      <nav class="banner-content text-right pr-3">
+        <p class="fs-2xl fw-regular fs-sm-base">Promise-Desert 2020 早春系列</p>
         <h1 class="fs-5xl fw-bold mb-1 fs-sm-l">
-          <sapn class="fs-2xl fw-regular fs-sm-base">Promise-Desert 2020 早春系列</sapn><br>
           看得清，才能看得遠
         </h1>
         <a class="bg-primary text-white" href="#">立即購買</a>
-      </div>
+      </nav>
     </div>
   </section>
   <section class="service bg-secondary text-center py-20 py-sm-10">
@@ -50,22 +50,34 @@
       <h2 class="fw-bold fs-4xl fs-sm-l mb-6">用專業的心，做專業的事</h2>
       <ul class="service-content d-flex flex-wrap mx-n3">
         <li class="w-25 w-md-50 w-sm-100 px-3 mb-md-6 mb-sm-6">
-          <img class="mb-4" src="./assets/images/home-section2-1.png" alt="image-單一價格">
+          <!-- <img class="mb-4" src="./assets/images/home-section2-1.png" alt="image-單一價格"> -->
+          <span class="material-symbols-outlined service-icon text-danger mb-4">
+            paid
+          </span>
           <h3 class="fw-bold fs-l mb-2">單一價格</h3>
           <p class="text-left">無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
         </li>
         <li class="w-25 w-md-50 w-sm-100 px-3 mb-md-6 mb-sm-6">
-          <img class="mb-4" src="./assets/images/home-section2-2.png" alt="image-20分鐘即可取件">
+          <!-- <img class="mb-4" src="./assets/images/home-section2-2.png" alt="image-20分鐘即可取件"> -->
+          <span class="material-symbols-outlined service-icon text-danger mb-4">
+            schedule
+          </span>
           <h3 class="fw-bold fs-l mb-2">20分鐘即可取件</h3>
           <p class="text-left">為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
         </li>
         <li class="w-25 w-md-50 w-sm-100 px-3 mb-sm-6">
-          <img class="mb-4" src="./assets/images/home-section2-3.png" alt="image-安心售後服務">
+          <!-- <img class="mb-4" src="./assets/images/home-section2-3.png" alt="image-安心售後服務"> -->
+          <span class="material-symbols-outlined service-icon text-danger mb-4">
+            favorite
+          </span>
           <h3 class="fw-bold fs-l mb-2">安心售後服務</h3>
           <p class="text-left">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
         </li>
         <li class="w-25 w-md-50 w-sm-100 px-3">
-          <img class="mb-4" src="./assets/images/home-sectioin2-4.png" alt="image-關於鏡片">
+          <!-- <img class="mb-4" src="./assets/images/home-sectioin2-4.png" alt="image-關於鏡片"> -->
+          <span class="material-symbols-outlined service-icon text-danger mb-4">
+            voicemail
+          </span>
           <h3 class="fw-bold fs-l mb-2">關於鏡片</h3>
           <p class="text-left">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
         </li>
@@ -118,7 +130,7 @@
           <img src="./assets/images/home-section5-1.png" alt="photo-Jessy">
           <div class="customer-card d-flex flex-column justify-content-between">
             <div>
-              <h5 class="fw-medium mb-2">Jessy</h5>
+              <h4 class="fw-medium mb-2">Jessy</h4>
               <p>眼鏡品質優良，下次還會想來這邊購買！</p>
             </div>
             <span class="recommend-date fs-s">2021/06/20</sapn>
@@ -128,7 +140,7 @@
           <img src="./assets/images/home-section5-2.png" alt="photo-凱倫">
           <div class="customer-card d-flex flex-column justify-content-between">
             <div>
-              <h5 class="fw-medium mb-2">凱倫</h5>
+              <h4 class="fw-medium mb-2">凱倫</h4>
               <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
             </div>
             <span class="recommend-date fs-s">2021/04/18</span>
@@ -138,7 +150,7 @@
           <img src="./assets/images/home-section5-3.png" alt="photo-悠悠">
           <div class="customer-card d-flex flex-column justify-content-between">
             <div>
-              <h5 class="fw-medium mb-2">悠悠</h5>
+              <h4 class="fw-medium mb-2">悠悠</h4>
               <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
             </div>
             <span class="recommend-date fs-s">2020/12/25</span>
@@ -148,7 +160,7 @@
           <img src="./assets/images/home-section5-4.png" alt="photo-Kyuan">
           <div class="customer-card d-flex flex-column justify-content-between">
             <div>
-              <h5 class="fw-medium mb-2">Kyuan</h5>
+              <h4 class="fw-medium mb-2">Kyuan</h4>
               <p>服務很好，品質沒有任何問題，非常喜歡。</p>
             </div>
             <span class="recommend-date fs-s">2020/10/31</span>
@@ -184,7 +196,11 @@
             我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
           </label>
         </div>
-        <button class="btn-contact-submit bg-primary text-white fw-bold py-4" type="submit">確認送出</button>
+        <div>
+        <!-- 助教建議: 屬於表單的提交按鈕，改為使用 input 標籤並設置 type="submit" -->
+        <!-- <button class="btn-contact-submit bg-primary text-white fw-bold py-4" type="submit">確認送出</button> -->
+        <input class="btn-contact-submit bg-primary text-white fw-bold py-4" type="submit" value="確認送出">
+      </div>
       </form>
     </div>
   </section>
@@ -195,11 +211,11 @@
       <div class="d-sm-flex flex-sm-row-reverse justify-content-sm-between mb-8 mb-sm-6">
         <div class="d-flex justify-content-between mb-6">
           <ul class="footer-navbar d-flex align-items-center">
-            <Li class="mr-12"><a href="#">首頁</a></Li>
-            <Li class="mr-12"><a href="#">系列鏡框</a></Li>
-            <Li class="mr-12"><a href="#">門市據點</a></Li>
-            <Li class="mr-12"><a href="#">部落格</a></Li>
-            <Li class="mr-12"><a href="#">常見問題</a></Li>
+            <Li class="mr-12 mr-md-6"><a class="px-4 py-3 ml-n4" href="#">首頁</a></Li>
+            <Li class="mr-12 mr-md-6"><a class="px-4 py-3" href="#">系列鏡框</a></Li>
+            <Li class="mr-12 mr-md-6"><a class="px-4 py-3" href="#">門市據點</a></Li>
+            <Li class="mr-12 mr-md-6"><a class="px-4 py-3" href="#">部落格</a></Li>
+            <Li class="mr-12 mr-md-6"><a class="px-4 py-3" href="#">常見問題</a></Li>
           </ul>
           <ul class="footer-social-links d-flex">
             <li class="mr-8 mr-md-4 mr-sm-2"><a href="#"><img src="./assets/images/ic-social-fb.png" alt="icon-facebook"></a></li>

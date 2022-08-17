@@ -77,9 +77,6 @@ a {
   text-decoration: none; }
 
 /* 滑鼠移到按鈕元件會出現【手指圖示】 */
-button {
-  cursor: pointer; }
-
 /* 背景色 */
 .bg-primary {
   background: #AA0601; }
@@ -511,6 +508,9 @@ button {
 .ml-3 {
   margin-left: 12px; }
 
+.ml-n4 {
+  margin-left: -16px; }
+
 .mr-1 {
   margin-right: 4px; }
 
@@ -764,40 +764,18 @@ button {
     width: 24px;
     height: 24px; } }
 
-.series-navbar ul li {
-  border-left: 1px solid #DCDCDC;
-  border-bottom: 1px solid #DCDCDC; }
-
-.series-navbar ul:last-child {
-  border-right: 1px solid #DCDCDC; }
-
-.series-navbar a {
-  display: block;
-  color: #000000;
-  position: relative; }
-  .series-navbar a::after {
-    content: '';
-    width: 0px;
-    height: 8px;
-    background-color: #AA0601;
-    position: absolute;
-    bottom: 0;
-    left: 0; }
-  .series-navbar a:hover::after {
-    width: 100%; }
-
-.series-navbar a.active::after {
-  width: 100%; }
-
 .banner {
   background: url(../images/home-header.png);
-  height: 100vh;
+  height: 787px;
   background-repeat: no-repeat;
   /*圖片不重複*/
   background-size: cover;
   /*圖片等比例縮放，讓圖片可以蓋滿元素寬高*/
   background-position: center;
   /*讓圖片位置居中*/ }
+  @media (max-width: 767px) {
+    .banner {
+      height: 396px; } }
 
 .banner-content h1 {
   color: #650300; }
@@ -812,9 +790,9 @@ button {
 .service h2, .service h3 {
   color: #650300; }
 
-.service .service-content img {
-  width: 100px;
-  height: 100px; }
+.service .service-content .service-icon {
+  font-size: 100px;
+  font-weight: 600; }
 
 /* 經典系列鏡框 */
 .series h2 {
@@ -902,7 +880,9 @@ button {
   width: 65%;
   margin: 0 auto;
   border: 0;
-  /* 清除border */ }
+  /* 清除border */
+  cursor: pointer;
+  /* 滑鼠指標: 手指 */ }
   .contact .btn-contact-submit:hover {
     background: #650300; }
 
@@ -915,6 +895,32 @@ button {
     width: 100%; }
   .contact .btn-contact-submit {
     width: 100%; } }
+
+/* 系列鏡框-導覽列 */
+.series-navbar ul li {
+  border-left: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC; }
+
+.series-navbar ul:last-child {
+  border-right: 1px solid #DCDCDC; }
+
+.series-navbar a {
+  display: block;
+  color: #000000;
+  position: relative; }
+  .series-navbar a::after {
+    content: '';
+    width: 0px;
+    height: 8px;
+    background-color: #AA0601;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .series-navbar a:hover::after {
+    width: 100%; }
+
+.series-navbar a.active::after {
+  width: 100%; }
 
 /* 系列鏡框-OPTICAL */
 .series-header-optical {
@@ -1061,5 +1067,8 @@ button {
     height: 24px; }
     .blog-topic .blog-share-link img:hover {
       opacity: 0.7; }
+  @media (max-width: 767px) {
+    .blog-topic .blog-share-link {
+      display: none; } }
 
 /*# sourceMappingURL=all.css.map */
