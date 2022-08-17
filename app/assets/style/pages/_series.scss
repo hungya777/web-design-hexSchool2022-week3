@@ -1,3 +1,40 @@
+/* 系列鏡框-導覽列 */
+.series-navbar {
+  ul {
+    li {
+      border-left: 1px solid $gray-300;
+      border-bottom: 1px solid $gray-300;
+    }
+    &:last-child {
+      border-right: 1px solid $gray-300;
+    }
+  }
+  a {
+    display: block;
+    color: $black;
+    position: relative;
+    &::after {
+      content: '';
+      width: 0px;
+      height: 8px;
+      background-color: $primary;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    &:hover{
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  a.active {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
 /* 系列鏡框-OPTICAL */
 .series-header-optical {
   height: 296px;
