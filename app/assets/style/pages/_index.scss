@@ -28,10 +28,14 @@
   }
 
   .service-content{
-    img {
-      width: 100px;
-      height: 100px;
+    .service-icon {
+      font-size: 100px;
+      font-weight: 600;
     }
+    // img {
+    //   width: 100px;
+    //   height: 100px;
+    // }
   }
 }
 
@@ -141,6 +145,7 @@
     width: 65%;
     margin: 0 auto;
     border: 0; /* 清除border */
+    cursor: pointer;  /* 滑鼠指標: 手指 */
     &:hover {
       background: $danger;
     }
