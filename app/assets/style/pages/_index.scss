@@ -1,9 +1,13 @@
 .banner {
   background: url(../images/home-header.png);
-  height: 100vh;
+  // height: 100vh;
+  height: 787px;
   background-repeat: no-repeat; /*圖片不重複*/
   background-size: cover; /*圖片等比例縮放，讓圖片可以蓋滿元素寬高*/
   background-position: center; /*讓圖片位置居中*/
+  @include mobile() {
+    height: 396px;
+  }
 }
 .banner-content {
   h1 {
